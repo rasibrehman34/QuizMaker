@@ -366,6 +366,7 @@ h3 {
 
 .card p {
     font-size: 16px;
+    font-weight: 600;
     color: #d1d1d1; /* Lighter text color */
     width: 80%; /* Ensure text does not overflow */
     margin-top: 10px;
@@ -472,8 +473,7 @@ h3 {
 .about-us .right h2 {
     font-size: 35px;
     font-weight: bolder;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 12px;
  }
 
 .card2 span {

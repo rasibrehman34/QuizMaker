@@ -1,0 +1,252 @@
+
+ body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-color: #302f2f;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #434343, #252323);
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #ffffff; 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.4);
+  width: 70%;
+  max-width: 800px;
+  animation: fadeIn 0.5s ease-in-out;
+  box-sizing: border-box; 
+}
+
+#mcqSettings label {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.container input:first-of-type, 
+.container select:first-of-type {
+  background-color: #f9f9f9;
+}
+
+
+h1 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+input, select, input[type="file"] {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: border 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  border-color: #FF9800;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+  background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color:#191919;
+  color: white;
+}
+
+#playerInputs {
+  width: 100%;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+#playerInputs label {
+  color: white;
+}
+
+#timerSettings label {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+#timerSettings {
+  margin-top: -10px;
+  font-size: 16px;
+  padding: 0px;
+}
+
+#timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  input, select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  input, select {
+    font-size: 12px;
+    height: 38px;
+  }
+}
+
+.result-container {
+  background: #000000;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.4);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.result-card {
+  background: linear-gradient(135deg, #3c6740, #85c589);
+  color: white;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+}
+
+.result-card.red {
+  background: linear-gradient(135deg, #FF5252, #D32F2F);
+}
+
+.result-card span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.restart-btn {
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+  background-color: #FF9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-btn:hover {
+  background-color: #F57C00;
+}
+
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.option-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  width: 47%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 550;
+  /* word-wrap: break-word;  */
+  white-space: normal; 
+  height: auto; 
+  min-height: 50px; 
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background-color: 191919;
+}
